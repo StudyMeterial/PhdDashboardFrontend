@@ -46,11 +46,12 @@ function App() {
 
      
 
-      <Navbar/>
+     
       
     
       {/* <AboutUs/> */}
          <Routes>
+             {/* <Route exact path='/homenavbar' element={<Navbar/>}/> */}
              <Route exact path='/' element={<Dashboard/>}/>
              <Route exact path='/admission' element={<Admission/>}/>
              <Route exact path='/service' element={<Services/>}/>

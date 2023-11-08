@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import Navbar from '../layout/Navbar';
 
 const LoginAdmin = () => {
   const [credentials, setCredentials] = useState({ username: '', password: '' });
@@ -32,33 +33,55 @@ const LoginAdmin = () => {
 
 
   return (
-    <div className="login-container">
-      <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label>Username:</label>
-          <input
-            type="text"
-            name="username"
-            value={credentials.username}
-            onChange={handleInputChange}
-            required
-          />
+    <>
+     <Navbar/>
+     <div className="container mt-5">
+      <div className="row justify-content-center">
+        <div className="col-md-6">
+          <div className="card" style={{ width: '500px',margin:'100px' }}>
+            <div className="card-header bg-primary text-white">
+              <h2 className="text-center">Login</h2>
+            </div>
+            <div className="card-body">
+              <form onSubmit={handleSubmit}>
+                <div className="form-group">
+                  <label>Username:</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    name="username"
+                    value={credentials.username}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label>Password:</label>
+                  <input
+                    type="password"
+                    className="form-control"
+                    name="password"
+                    value={credentials.password}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </div>
+                <button type="submit" className="btn btn-primary btn-block">Login</button>
+              </form>
+              <div className="mt-3">
+                <p className="text-center">
+                  <a href="/forgot-password">Forgot Password?</a>
+                </p>
+                <div className="card-footer">
+              <p className="text-danger text-center">{message}</p>
+            </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="form-group">
-          <label>Password:</label>
-          <input
-            type="password"
-            name="password"
-            value={credentials.password}
-            onChange={handleInputChange}
-            required
-          />
-        </div>
-        <button type="submit">Login</button>
-      </form>
-      <p>{message}</p>
+      </div>
     </div>
+    </>
   );
 };
 

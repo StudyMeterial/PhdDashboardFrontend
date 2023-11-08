@@ -5,13 +5,15 @@ import dash2 from "./dash2.jpg";
 import dash3 from "./dash3.jpg";
 import dash4 from "./dash4.jpg";
 import dash5 from "./dash5.jpg";
+import Navbar from "../layout/Navbar";
 
 export default function Dashboard() {
   return (
     <div>
+      <Navbar/>
       <div className="jumbotron">
         <div className="container">
-          <h1 className="display-8" style={{ textAlign:"center"}}>PhD Dashboard</h1>
+          <h1 className="display-8" style={{ textAlign:"center", marginLeft:"450px"}}>PhD Dashboard</h1>
           {/* <img src="src\pages\home.jpg" alt="Description of the image" /> */}
 
         
@@ -63,9 +65,9 @@ export default function Dashboard() {
         </div>
 
         <div className="container col-md-2">
-          <div
+        <div
             className="card shadow-effect "
-            style={{ width: "18rem", right: "10rem", top: "6rem" }}
+            style={{ width: "18rem", top: "6rem" ,marginBottom:"15rem" }}
           >
             <img className="card-img-top" src={dash2} alt="Card image cap" />
             <div className="card-body">
