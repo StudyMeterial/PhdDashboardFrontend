@@ -79,7 +79,7 @@ const Dashboard1 = () => {
           </Link>
         </div>
         <div className="container col-md-2 ">
-          <Link to={"/profile}"}>
+          <Link to="/fulltimeresearch">
             {" "}
             <img
               class="card-img-top shadow-effect"
