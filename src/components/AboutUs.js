@@ -13,9 +13,9 @@ const AboutUs = () => {
 
       <h3>Full-Time PhD Students</h3>
       <p>
-        Full-time PhD students dedicate their entire time to their studies and research.
+        Full-time PhD students dedicate their entire time to their studies and research to improve their experience.
         They typically have a heavier workload and are actively engaged in academic activities.
-        Our platform provides comprehensive support and resources to help them succeed.
+        Our platform provides comprehensive support and resources to help them succeed in their goals.
       </p>
 
       <h3>Half-Time PhD Students</h3>
