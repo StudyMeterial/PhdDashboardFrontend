@@ -1,8 +1,11 @@
 import React from 'react';
+import Navbar from '../layout/Navbar';
 
 const ContactUs = () => {
   return (
-    <div className="container mt-5 contact-container bg-secondary text-white">
+  <>
+  <Navbar/>
+    <div className="container mt-5 contact-container bg-secondary text-white" style={{margin:'50px'}}>
     <h2>Contact Us</h2>
     <p>
       Have questions or need assistance? Feel free to reach out to us using the form below or through our contact information.
@@ -33,6 +36,9 @@ const ContactUs = () => {
       </div>
     </div>
   </div>
+  
+  
+</>
   );
 };
 

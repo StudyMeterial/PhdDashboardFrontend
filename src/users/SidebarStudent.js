@@ -10,9 +10,9 @@ import {
 } from "react-icons/fa";
 
 import { NavLink } from "react-router-dom";
-import Dashboard1 from "./Dashboard1";
+// import Dashboard1 from "./Dashboard1";
 
-const Sidebar = ({ children }) => {
+const SidebarStudent = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   const menuItem = [
@@ -22,7 +22,7 @@ const Sidebar = ({ children }) => {
       icon: <FaTh />,
     },
     {
-      path: "/fulltimeleaveapplication",
+      path: "/fulltimeapplyleave",
       name: "Apply Leave",
       icon: <FaUserAlt />,
     },
@@ -104,11 +104,11 @@ const Sidebar = ({ children }) => {
         </div>
 
         <div className="container col-md-10">
-          <Dashboard1 />
+          {/* <Dashboard1 /> */}
         </div>
       </div>
     </>
   );
 };
 
-export default Sidebar;
+export default SidebarStudent;

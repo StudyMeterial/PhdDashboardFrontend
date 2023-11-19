@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
+import NavbarFullTime from "../layout/NavbarFullTime";
 
 export default function Profile() {
   const [phdstudentfts, setphdstudentfts] = useState([]);
@@ -26,6 +27,9 @@ export default function Profile() {
   const student = phdstudentfts.length > 0 ? phdstudentfts[0] : null;
 if(student){
   return (
+
+    <>
+     <NavbarFullTime/>
     <div className="container">
       <div className="py-4">
         <Link className="btn btn-outline-primary" to={`/addStudent`}>
@@ -84,6 +88,7 @@ if(student){
         </table>
       </div>
     </div>
+    </>
 
   );}else {
     // Handle the case when there are no students in the array

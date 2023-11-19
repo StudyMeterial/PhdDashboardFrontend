@@ -35,6 +35,12 @@ import Performance from './phdfulltimestudent/Performance';
 import ResearchActivity from './phdfulltimestudent/ResearchActivity';
 import Salary from './phdfulltimestudent/Salary';
 import Profiledemo from './Loginpage/Profiledemo';
+import Proctor from './phdfulltimestudent/Proctor';
+import SalaryManagement from './pages/SalaryManagment';
+import NavbarHalfTime from './layout/NavbarHalfTime';
+import SidebarStudent from './users/SidebarStudent';
+import LeaveApplicationForm from './phdfulltimestudent/LeaveApplicationForm';
+import ApproveLeaveApplication from './phdfulltimestudent/ApproveLeaveApplication';
 
 
 
@@ -63,6 +69,8 @@ function App() {
              <Route exact path="/addUser" element={<AddUser/>}/>
              <Route exact path="/edituser/:id" element={<EditUser/>}/>
              <Route exact path="/viewuser/:id" element={<ViewUser/>}/>
+             <Route exact path="/navbarHalftime" element={<NavbarHalfTime/>}/>
+             <Route exact path="/sidebarStudent" element={<SidebarStudent/>}/>
             
              {/* Phd Fulltime Student */}
              <Route exact path="/homephdstudent" element={ <HomePhdStudent/>}/>
@@ -80,12 +88,15 @@ function App() {
               <Route exact path="/fulltimesidebar" element={<Dashboard1/>}/>
               <Route exact path="/fulltimeassignments" element={<Assignments/>}/>
               <Route exact path="/fulltimeapplyleave" element={<ApplyLeave/>}/>
+              <Route exact path="/fulltimeleaveapplication" element={<LeaveApplicationForm/>}/>
+              <Route exact path="/approveleaveapplication" element={<ApproveLeaveApplication/>}/>
 
               <Route exact path="/fulltimeattendence" element={<Attendence/>}/>
               <Route exact path="/fulltimeperformance" element={<Performance/>}/>
               <Route exact path="/fulltimereport" element={<Report/>}/>
               <Route exact path="/fulltimeresearch" element={<ResearchActivity/>}/>
               <Route exact path="/fulltimesalary" element={<Salary/>}/>
+              <Route exact path="/fulltimeproctor" element={<Proctor/>}/>
              
 
       
@@ -94,6 +105,7 @@ function App() {
 
              {/* Login admin,student */}
              <Route exact path="/adminLogin" element={<LoginAdmin/>}/>
+             <Route exact path="/adminSalary" element={<SalaryManagement/>}/>
              {/* <Route exact path="/logout" element={<LogoutComponent/>}/> */}
 
              {/* Admin Home page */}

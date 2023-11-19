@@ -11,6 +11,7 @@ export default function AddStudent() {
     username: "",
     password: "",
     qualification: "",
+    phdStudent:"",
     village: "",
     dist: "",
     state: "",
@@ -22,6 +23,7 @@ export default function AddStudent() {
     username,
     password,
     qualification,
+    phdStudent,
     village,
     dist,
     state,
@@ -123,6 +125,7 @@ export default function AddStudent() {
                 required
               />
             </div>
+           
 
             <div className="mb-3">
               <label htmlFor="UserName" className="form-label">
@@ -164,6 +167,20 @@ export default function AddStudent() {
                 placeholder="Enter your state"
                 name="state"
                 value={state}
+                onChange={(e) => onInputChange(e)}
+                required
+              />
+            </div>
+            <div className="mb-3">
+              <label htmlFor="UserName" className="form-label">
+               Type Student
+              </label>
+              <input
+                type={"text"}
+                className="form-control"
+                placeholder="Enter your Student Type"
+                name="phdStudent"
+                value={phdStudent}
                 onChange={(e) => onInputChange(e)}
                 required
               />

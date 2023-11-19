@@ -1,8 +1,10 @@
 import React from 'react';
+import Navbar from '../layout/Navbar';
 
 const Services = () => {
   return (
-    <div className="container">
+    <div >
+      <Navbar/>
       <h2>Our Services</h2>
       <p>
         Welcome to our PhD program dashboard! Here are some of the services we offer to our students:

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import NavbarFullTime from '../layout/NavbarFullTime';
 
 const Assignments = () => {
   const initialQuestions = [
@@ -50,6 +51,8 @@ const Assignments = () => {
   
 
   return (
+    <>
+    <NavbarFullTime/>
     <div className="container mt-5">
       <div className="row justify-content-center">
         <div className="col-md-12">
@@ -101,6 +104,7 @@ const Assignments = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

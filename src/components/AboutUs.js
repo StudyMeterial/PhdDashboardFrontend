@@ -1,8 +1,10 @@
 import React from 'react';
+import Navbar from '../layout/Navbar';
 
 const AboutUs = () => {
-  return (
-   <div className="container mt-5">
+  return (<>
+  <Navbar/>
+   <div className="containe ">
       <h2>About PhD Dashboard</h2>
       <p>
         Welcome to the PhD Dashboard, your centralized platform for managing PhD programs.
@@ -23,6 +25,7 @@ const AboutUs = () => {
         Our platform is designed to accommodate their unique needs, offering tailored assistance and guidance.
       </p>
     </div>
+    </>
   );
 };
 

@@ -12,7 +12,7 @@ const Dashboard1 = () => {
     <>
       <div className="row " style={{}}>
         <div className="container col-md-2 ">
-          <Link to="/fulltimeapplyleave">
+          <Link to="/fulltimeleaveapplication">
             {" "}
             {/* Update the route path */}
             <img
@@ -20,8 +20,8 @@ const Dashboard1 = () => {
               src={leave}
               alt="Card image cap"
               style={{
-                width: "150px",
-                height: "150px",
+                width: "70px",
+                height: "70px",
                 marginTop: "5rem",
               }}
             />
@@ -36,7 +36,8 @@ const Dashboard1 = () => {
               class="card-img-top shadow-effect"
               src={Assignment}
               alt="Card image cap"
-              style={{ width: "150px", height: "150px", marginTop: "5rem" }}
+              style={{  width: "70px",
+              height: "70px", marginTop: "5rem" }}
             />
             <h5>Assignments</h5>
           </Link>
@@ -49,31 +50,34 @@ const Dashboard1 = () => {
               class="card-img-top shadow-effect"
               src={leave}
               alt="Card image cap"
-              style={{ width: "150px", height: "150px", marginTop: "5rem" }}
+              style={{ width: "70px",
+              height: "70px", marginTop: "5rem" }}
             />
             <h5>Attendence</h5>
           </Link>
         </div>
         <div className="container col-md-2 ">
-          <Link to={"/profile}"}>
+          <Link to="/fulltimeperformance">
             {" "}
             <img
               class="card-img-top shadow-effect"
               src={leave}
               alt="Card image cap"
-              style={{ width: "150px", height: "150px", marginTop: "5rem" }}
+              style={{  width: "70px",
+              height: "70px",marginTop: "5rem" }}
             />
             <h5>Performance</h5>
           </Link>
         </div>
         <div className="container col-md-2 ">
-          <Link to={"/profile}"}>
+          <Link to="/fulltimeproctor">
             {" "}
             <img
               class="card-img-top shadow-effect"
               src={Proctor}
               alt="Card image cap"
-              style={{ width: "150px", height: "150px", marginTop: "5rem" }}
+              style={{  width: "70px",
+              height: "70px", marginTop: "5rem" }}
             />
             <h5>Proctor</h5>
           </Link>
@@ -85,31 +89,34 @@ const Dashboard1 = () => {
               class="card-img-top shadow-effect"
               src={Research}
               alt="Card image cap"
-              style={{ width: "150px", height: "150px", marginTop: "5rem" }}
+              style={{  width: "70px",
+              height: "70px", marginTop: "5rem" }}
             />
             <h5>Research Activities</h5>
           </Link>
         </div>
         <div className="container col-md-2 ">
-          <Link to={"/profile}"}>
+          <Link to="/fulltimesalary">
             {" "}
             <img
               class="card-img-top shadow-effect"
               src={leave}
               alt="Card image cap"
-              style={{ width: "150px", height: "150px", marginTop: "5rem" }}
+              style={{ width: "70px",
+              height: "70px", marginTop: "5rem" }}
             />
             <h5>Salary</h5>
           </Link>
         </div>
         <div className="container col-md-2 ">
-          <Link to={"/fulltimereport}"}>
+          <Link to="/fulltimereport">
             {" "}
             <img
               class="card-img-top shadow-effect"
               src={Report}
               alt="Card image cap"
-              style={{ width: "150px", height: "150px", marginTop: "5rem" }}
+              style={{  width: "70px",
+              height: "70px", marginTop: "5rem" }}
             />
             <h5>Report</h5>
           </Link>
@@ -121,7 +128,8 @@ const Dashboard1 = () => {
               class="card-img-top shadow-effect"
               src={leave}
               alt="Card image cap"
-              style={{ width: "150px", height: "150px", marginTop: "5rem" }}
+              style={{  width: "70px",
+              height: "70px", marginTop: "5rem" }}
             />
             <h5>Student</h5>
           </Link>
@@ -133,7 +141,8 @@ const Dashboard1 = () => {
               class="card-img-top shadow-effect"
               src={Profile}
               alt="Card image cap"
-              style={{ width: "150px", height: "150px", marginTop: "5rem" }}
+              style={{ width: "70px",
+              height: "70px", marginTop: "5rem" }}
             />
             <h5>Profile</h5>
           </Link>
@@ -145,7 +154,8 @@ const Dashboard1 = () => {
               class="card-img-top shadow-effect"
               src={leave}
               alt="Card image cap"
-              style={{ width: "150px", height: "150px", marginTop: "5rem" }}
+              style={{  width: "70px",
+              height: "70px", marginTop: "5rem" }}
             />
           </Link>
         </div>

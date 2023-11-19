@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import NavbarFullTime from '../layout/NavbarFullTime';
 // import './Profiledemo.css';
 
 
@@ -30,6 +31,8 @@ const LoginAdmin = () => {
   };
 
   return (
+    <>
+    <NavbarFullTime/>
     <div className="user-detail-container">
       <h2>Fetch User Details by ID</h2>
       <form onSubmit={handleSubmit}>
@@ -60,6 +63,7 @@ const LoginAdmin = () => {
       )}
       </div>
     </div>
+    </>
   );
 };
 

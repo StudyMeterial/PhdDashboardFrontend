@@ -39,6 +39,7 @@ export default function HomePhdStudent() {
               <th scope="col">Username</th>
               <th scope="col">Password</th>
               <th scope="col">Qualification</th>
+              <th scope="col">Student</th>
               <th scope="col">Village</th>
               <th scope="col">District</th>
               <th scope="col">State</th>
@@ -52,6 +53,7 @@ export default function HomePhdStudent() {
                 <td>{student.email}</td>
                 <td>{student.username}</td>
                 <td>{student.password}</td>
+                <td>{student.phdStudent}</td>
                 <td>{student.qualification}</td>
                 <td>{student.village}</td>
                 <td>{student.dist}</td>
