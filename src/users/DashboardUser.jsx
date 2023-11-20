@@ -12,7 +12,7 @@ const Dashboard1 = () => {
     <>
       <div className="row "  style={{ background: '#d4edda' }}>
         <div className="container col-md-2 ">
-          <Link to="/fulltimeleaveapplication">
+          <Link to="/approveuserleave">
             {" "}
             {/* Update the route path */}
             <img
@@ -82,32 +82,7 @@ const Dashboard1 = () => {
             <h5>Proctor</h5>
           </Link>
         </div>
-        <div className="container col-md-2 ">
-          <Link to="/fulltimeresearch">
-            {" "}
-            <img
-              class="card-img-top shadow-effect"
-              src={Research}
-              alt="Card image cap"
-              style={{  width: "70px",
-              height: "70px", marginTop: "5rem" }}
-            />
-            <h5>Research Activities</h5>
-          </Link>
-        </div>
-        <div className="container col-md-2 ">
-          <Link to="/fulltimesalary">
-            {" "}
-            <img
-              class="card-img-top shadow-effect"
-              src={leave}
-              alt="Card image cap"
-              style={{ width: "70px",
-              height: "70px", marginTop: "5rem" }}
-            />
-            <h5>Salary</h5>
-          </Link>
-        </div>
+       
         <div className="container col-md-2 ">
           <Link to="/fulltimereport">
             {" "}

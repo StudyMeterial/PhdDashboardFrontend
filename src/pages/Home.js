@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
+import NavbarAdmin from "../layout/NavbarAdmin";
+// import NavbarHalfTime from "../layout/NavbarHalfTime";
+// import Navbar from "../layout/Navbar";
 
 export default function Home() {
   const [users, setUsers] = useState([]);
@@ -25,12 +28,14 @@ export default function Home() {
   };
 
   return (
-    <div className="container">
+    <>
+    <NavbarAdmin/>
+    <div className="container" >
       <div className="py-4">
         <Link className="btn btn-outline-primary" to={`/addUser`}>
           Add User
         </Link>
-        <table className="table border shadow">
+        <table className="table border shadow" style={{padding:'50px'}}>
           <thead>
             <tr>
             <th scope="col">#</th>
@@ -59,7 +64,7 @@ export default function Home() {
                 <td>{user.dist}</td>
                 <td>{user.state}</td>
                 <td>
-                  <Link
+                 <div className="container"> <Link
                     className="btn btn-primary mx-2"
                     to={`/viewuser/${user.id}`}
                   >
@@ -77,6 +82,7 @@ export default function Home() {
                   >
                     Delete
                   </button>
+                  </div>
                 </td>
               </tr>
             ))}
@@ -84,5 +90,6 @@ export default function Home() {
         </table>
       </div>
     </div>
+    </>
   );
 }

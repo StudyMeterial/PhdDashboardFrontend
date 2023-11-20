@@ -95,7 +95,7 @@ const SalaryManagment = () => {
       <div className="container mt-4 " style={{margin:'10px'}}>
     
 
-      <div className="card p-3">
+      <div className="card p-3"  style={{ margin: '100px auto', maxWidth: '600px', padding: '20px', background: '#d4edda' }}>
       <h2 className="mb-4">Salary PhD Student</h2>
         <div className="form-group">
           <label>Amount: </label>
@@ -142,7 +142,7 @@ const SalaryManagment = () => {
         </button>
       </div>
       </div>
-      <div className="container mt-12 ">
+      <div className="container mt-12 "  style={{ margin: '100px auto', maxWidth: '600px', padding: '20px', background: '#d4edda' }}>
       <div className="mt-12">
         <h3>All Salaries</h3>
         <ul className="list-group">
@@ -158,7 +158,7 @@ const SalaryManagment = () => {
       </div>
       </div>
       {selectedSalary && (
-        <div className="mt-4">
+        <div className="mt-4"  style={{ margin: '100px auto', maxWidth: '600px', padding: '20px', background: '#d4edda' }}>
           <h3>Selected Salary Details</h3>
           <div className="card p-3">
             <p>{`Amount: ${selectedSalary.amount}, Month: ${selectedSalary.month}, Year: ${selectedSalary.year}, Employee Name: ${selectedSalary.employeeName}`}</p>
@@ -184,7 +184,7 @@ const SalaryManagment = () => {
         </div>
       )}
 
-      <div className="mt-4">
+      <div className="mt-4"  style={{ margin: '100px auto', maxWidth: '600px', padding: '20px', background: '#d4edda' }}>
         <h3>Check Salary Details</h3>
         <div className="form-group">
           <label>Salary ID: </label>

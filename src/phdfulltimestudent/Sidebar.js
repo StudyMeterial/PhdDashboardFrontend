@@ -61,7 +61,7 @@ const Sidebar = ({ children }) => {
   return (
     <>
       
-      <div className="row bg-light">
+      <div className="row "  style={{ background: '#d4edda' }}>
         <div className="container col-md-2">
           <div className="container">
             <div

@@ -3,8 +3,10 @@ import Navbar from '../layout/Navbar';
 
 const Services = () => {
   return (
-    <div >
-      <Navbar/>
+    <>
+     <Navbar/>
+    <div style={{ margin: '30px auto', maxWidth: '1200px', padding: '20px', background: '#d4edda' }}>
+     
       <h2>Our Services</h2>
       <p>
         Welcome to our PhD program dashboard! Here are some of the services we offer to our students:
@@ -18,6 +20,7 @@ const Services = () => {
         {/* Add more services as needed */}
       </ul>
     </div>
+    </>
   );
 };
 

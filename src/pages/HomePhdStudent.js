@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
+import NavbarAdmin from "../layout/NavbarAdmin";
 
 export default function HomePhdStudent() {
   const [phdstudentfts, setphdstudentfts] = useState([]);
@@ -25,6 +26,8 @@ export default function HomePhdStudent() {
   };
 
   return (
+    <>
+    <NavbarAdmin/>
     <div className="container">
       <div className="py-4">
         <Link className="btn btn-outline-primary" to={`/addStudent`}>
@@ -84,5 +87,6 @@ export default function HomePhdStudent() {
         </table>
       </div>
     </div>
+    </>
   );
 }

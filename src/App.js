@@ -41,6 +41,8 @@ import NavbarHalfTime from './layout/NavbarHalfTime';
 import SidebarStudent from './users/SidebarStudent';
 import LeaveApplicationForm from './phdfulltimestudent/LeaveApplicationForm';
 import ApproveLeaveApplication from './phdfulltimestudent/ApproveLeaveApplication';
+import LeaveApplicationuser from './users/LeaveApplicationuser';
+import ApproveUserLeaveApplication from './users/ApproveUserLeaveApplication';
 
 
 
@@ -71,6 +73,8 @@ function App() {
              <Route exact path="/viewuser/:id" element={<ViewUser/>}/>
              <Route exact path="/navbarHalftime" element={<NavbarHalfTime/>}/>
              <Route exact path="/sidebarStudent" element={<SidebarStudent/>}/>
+             <Route exact path="/leaveapplicationuser" element={<LeaveApplicationuser/>}/>
+             <Route exact path="/approveuserleave" element={<ApproveUserLeaveApplication/>}/>
             
              {/* Phd Fulltime Student */}
              <Route exact path="/homephdstudent" element={ <HomePhdStudent/>}/>

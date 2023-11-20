@@ -41,11 +41,7 @@ export default function Navbar() {
               Login
             </Link>
           </form>
-          <form class="form-inline my-2 my-lg-0" style={{marginRight:"2rem"}}>
-            <Link className="btn btn-danger" to={`/`}>
-              Logout
-            </Link>
-          </form>
+          
         </div>
       </nav>
     </div>

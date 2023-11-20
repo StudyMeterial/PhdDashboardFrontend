@@ -286,16 +286,7 @@ const LoginAdmin = () => {
           {/* Render user-specific content based on the response */}
           {userData.fullname && userData.phdStudent ? (
             <div style={{margin:'200px'}}>
-              {/* <h5>Welcome, PhdStudent {userData.fullname}!</h5>
-              <h5>Welcome, PhdStudent {userData.username}!</h5>
-              <h5>Welcome, PhdStudent {userData.password}!</h5>
-              <h5>Welcome, PhdStudent {userData.phdStudent}!</h5>
-              {/* Add PhdStudent-specific content here */}
-              {/* <p>This is specific content for PhdStudents. You can customize this section.</p>
-              <form class="form-inline my-2 my-lg-0" style={{marginRight:"0.5rem"}}>
-            <Link className="btn btn-success" to={`/fulltimehome`}>
-              Login
-            </Link></form> */}
+             
               <div className="container">
                
                   <div className="col-md offset-md border rounded mt-2 shadow">
@@ -394,21 +385,25 @@ const LoginAdmin = () => {
           )}
         </div>
       ) : (
-        <div style={{border: '2px solid #000', marginLeft:'400px',marginRight:'400px',marginTop:"50px",marginBottom:'100px', padding:'60px'}}>
+        <div  style={{ margin: '100px auto', maxWidth: '600px', padding: '20px', background: '#d4edda' }}>
           
           <header style={{fontSize:'50px',padding:'20px'}}>Login Here</header>
           <div style={{fontSize:'20px',padding:'10px'}}>
-            <label>Username:</label>
+          <div className="mb-3">
+            <label htmlFor="Username" className="form-label">Username:</label>
             <input
               type="text"
+              className="form-control"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
+            </div>
           </div>
           <div style={{fontSize:'20px',padding:'10px'}}>
             <label>Password:</label>
             <input
               type="password"
+              className="form-control"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />

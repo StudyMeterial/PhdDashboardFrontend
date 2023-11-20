@@ -121,8 +121,9 @@ const ApproveLeaveApplication = () => {
     <>
     <NavbarAdmin/>
     <div className="container mt-5">
-      <h2>Leave Applications</h2>
+      
       <div className="list-group">
+      <h2>Leave Applications</h2>
         {leaveApplications.map(application => (
           <div key={application.id} className="list-group-item d-flex justify-content-between align-items-center">
             {`${application.fullName} - ${application.status}`}
