@@ -10,7 +10,7 @@ export default function HalftimeHome() {
       <NavbarHalfTime/>
       <SidebarStudent>
        
-        </SidebarStudent>
+      </SidebarStudent>
       
     </div>
   );

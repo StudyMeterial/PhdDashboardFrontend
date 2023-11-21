@@ -3,7 +3,7 @@ import axios from 'axios';
 import ApplyLeave from './ApplyLeave';
 import NavbarAdmin from '../layout/NavbarAdmin';
 
-const LeaveApplicationForm = () => {
+const LeaveApplicationForm = (props) => {
     const [application, setApplication] = useState({
         fullName: '',
         email: '',
@@ -29,11 +29,11 @@ const LeaveApplicationForm = () => {
     };
 
     return (
-        <div className='bg-info'>
+        <div className="bg-success">
         <NavbarAdmin/>
-        <div className="container mt-5 bg-warning">
-            <form onSubmit={handleSubmit} style={{margin:'30px',padding:'100px'}} className="bg-success">
-            <h2>Submit Leave Application</h2>
+        <div className="container mt-5 ">
+            <form onSubmit={handleSubmit} style={{margin:'30px',padding:'100px',background: '#d4edda'}}>
+            <h2>{props.title1}</h2>
                 <div className="mb-3">
                     <label htmlFor="fullName" className="form-label">Full Name</label>
                     <input type="text" className="form-control" id="fullName" name="fullName" value={application.fullName} onChange={handleChange} />
@@ -69,3 +69,12 @@ const LeaveApplicationForm = () => {
 };
 
 export default LeaveApplicationForm;
+
+LeaveApplicationForm.defaultProps = {
+    title1: 'Submit Leave Application',
+    title2:'Submit Leave Application',
+    title3:'Salary FullTime Student',
+    
+  
+  };
+  

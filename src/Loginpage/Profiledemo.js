@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import NavbarFullTime from '../layout/NavbarFullTime';
+// import { Card } from 'react-bootstrap';
 // import './Profiledemo.css';
 
 
@@ -32,37 +33,41 @@ const LoginAdmin = () => {
 
   return (
     <>
-    <NavbarFullTime/>
-    <div className="user-detail-container">
-      <h2>Fetch User Details by ID</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label>ID:</label>
-          <input
-            type="text"
-            value={userId}
-            onChange={handleInputChange}
-            required
-          />
+      <NavbarFullTime />
+      <div className="card border-2" style={{ margin: '100px auto', maxWidth: '600px', padding: '20px', background: '#d4edda' }}>
+              <div className="card-body">
+      <div className="user-detail-container">
+        <h2>Enter Your ID</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label>ID:</label>
+            <input
+              type="text"
+              className="form-control m-4"
+              value={userId}
+              onChange={handleInputChange}
+              required
+            />
+          </div>
+          <button type="submit" className="btn btn-primary">Enter Your ID</button>
+        </form>
+        <div className="user-data">
+          {errorMessage && <p className="error-message">{errorMessage}</p>}
+          {userData && (
+           <div className='bg-success border-2 m-4 p-3'>
+                <h3 className="card-title">Your Profile</h3>
+                <p className="card-text">ID: {userData.id}</p>
+                <p className="card-text">FullName: {userData.fullname}</p>
+                <p className="card-text">Email: {userData.email}</p>
+                <p className="card-text">Username: {userData.username}</p>
+                <p className="card-text">Password: {userData.password}</p>
+                {/* Display other user data fields here */}
+            </div>
+          )}
         </div>
-        <button type="submit">Fetch User Details</button>
-      </form>
-      <div className='user-data'>
-      {errorMessage && <p className="error-message">{errorMessage}</p>}
-      {userData && (
-        <div>
-          <h3>User Data</h3>
-          <p>ID: {userData.id}</p>
-          <p>FullName: {userData.fullname}</p>
-          <p>Email: {userData.email}</p>
-          <p>FullName: {userData.username}</p>
-          <p>Email: {userData.password}</p>
-          
-          {/* Display other user data fields here */}
-        </div>
-      )}
       </div>
-    </div>
+      </div>
+ </div>
     </>
   );
 };

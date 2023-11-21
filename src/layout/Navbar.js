@@ -3,35 +3,35 @@ import { Link } from "react-router-dom";
 // import AddUser from '../users/AddUser'
 // import { Link } from "react-router-dom";
 
-export default function Navbar() {
+export default function Navbar(props) {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary shadow-effect">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            Phd DashBoard
+        {props.title}
           </a>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
                 <Link className="btn btn-primary" to={`/`}>
-                  Home
+                  {props.home}
                 </Link>
               </li>
               <li class="nav-item">
                 <Link className="btn btn-primary" to={`/service`}>
-                  Services
+                 {props.service}
                 </Link>
               </li>
               <li class="nav-item active">
                 <Link className="btn btn-primary" to={`/about`}>
-                  About Us
+                {props.aboutus}
                 </Link>
               </li>
               <li class="nav-item">
                 <Link className="btn btn-primary" to={`/contact`}>
-                  Contact Us
+                 {props.contactus}
                 </Link>
               </li>
             </ul>

@@ -244,7 +244,7 @@ import React, { useState } from "react";
 import Navbar from "../layout/Navbar";
 import { Link } from "react-router-dom";
 
-const LoginAdmin = () => {
+const LoginAdmin = (props) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -285,12 +285,12 @@ const LoginAdmin = () => {
         <div>
           {/* Render user-specific content based on the response */}
           {userData.fullname && userData.phdStudent ? (
-            <div style={{margin:'200px'}}>
+            <div style={{ margin: '100px auto', maxWidth: '600px', padding: '20px', background: '#d4edda' }}>
              
               <div className="container">
                
                   <div className="col-md offset-md border rounded mt-2 shadow">
-                    <h2 className="text-center m-12">Phd Dashboard FullTimeProfile</h2>
+                    <h2 className="text-center m-12">{props.phdStudent}</h2>
 
                     <div className="card">
                       <div className="card-header">
@@ -319,11 +319,11 @@ const LoginAdmin = () => {
               </div>
           
           ) : userData.username && userData.fullname ? (
-            <div style={{margin:'200px'}}>
+            <div style={{ margin: '100px auto', maxWidth: '600px', padding: '20px', background: '#d4edda' }}>
              <div className="container">
              
                   <div className="col-md offset-md-3 border rounded p-4 mt-2 shadow">
-                    <h2 className="text-center m-12">HalfTime Profile</h2>
+                    <h2 className="text-center m-12">{props.user}</h2>
 
                     <div className="card">
                       <div className="card-header">
@@ -354,10 +354,10 @@ const LoginAdmin = () => {
             </div>
           ) : (
             <div>
-              <div style={{margin:'200px'}}>
+              <div style={{ margin: '100px auto', maxWidth: '600px', padding: '20px', background: '#d4edda' }}>
               <div className="container">
                   <div className="col-md offset-md border rounded  mt-2 shadow">
-                    <h2 className="text-center ">User Profile</h2>
+                    <h2 className="text-center ">{props.admin}</h2>
 
                     <div className="card">
                       <div className="card-header">
@@ -414,6 +414,11 @@ const LoginAdmin = () => {
       )}
     </div>
   );
+};
+LoginAdmin.defaultProps = {
+  admin: 'Admin Profile',
+   phdStudent:"PhdStudent Profile",
+   user:"Student Profile"
 };
 
 export default LoginAdmin;

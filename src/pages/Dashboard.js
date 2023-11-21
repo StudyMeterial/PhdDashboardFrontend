@@ -115,7 +115,7 @@ export default function Dashboard() {
 </div>
 </div>
 
-<div style={{ margin: '30px auto', maxWidth: '1200px', padding: '20px', background: '#d4edda' }}>
+<div className="p-6" style={{ margin: '30px auto', maxWidth: '1200px', padding: '20px', background: '#d4edda' }}>
      
      <h2>Our Services</h2>
      <p>
@@ -130,14 +130,15 @@ export default function Dashboard() {
        {/* Add more services as needed */}
      </ul>
    </div>
-    <div className="container mt-5 contact-container bg-secondary text-white" style={{margin:'50px'}}>
-    <h2>Contact Us</h2>
+    <div  className="p-6" style={{ margin: '30px auto', maxWidth: '1200px', padding: '20px', background: '#d4edda' }}>
+   
+    <div className="row" >
+      <div className="col-md-6">
+        <form>
+        <h2>Contact Us</h2>
     <p>
       Have questions or need assistance? Feel free to reach out to us using the form below or through our contact information.
     </p>
-    <div className="row">
-      <div className="col-md-6">
-        <form>
           <div className="mb-3">
             <label htmlFor="name" className="form-label">Your Name</label>
             <input type="text" className="form-control" id="name" required />
@@ -165,3 +166,12 @@ export default function Dashboard() {
     </div>
   );
 }
+
+Navbar.defaultProps = {
+  title: 'Phd DashBoard',
+  home:'Home',
+  service:'services',
+  aboutus:'About Us',
+  contactus:'Contact Us'
+
+};

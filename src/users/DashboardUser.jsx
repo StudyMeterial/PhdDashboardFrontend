@@ -44,7 +44,7 @@ const Dashboard1 = () => {
         </div>
 
         <div className="container col-md-2 ">
-          <Link to="/fulltimeassignments">
+          <Link to="/attendence">
             {" "}
             <img
               class="card-img-top shadow-effect"

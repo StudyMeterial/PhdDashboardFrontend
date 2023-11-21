@@ -43,6 +43,14 @@ import LeaveApplicationForm from './phdfulltimestudent/LeaveApplicationForm';
 import ApproveLeaveApplication from './phdfulltimestudent/ApproveLeaveApplication';
 import LeaveApplicationuser from './users/LeaveApplicationuser';
 import ApproveUserLeaveApplication from './users/ApproveUserLeaveApplication';
+import DashboardUser from './users/DashboardUser';
+import AssignmentListUser from './pages/AssignmentList';
+import AssignmentListFull from './pages/AssignmentListFull';
+import Attendance from './phdfulltimestudent/Attendence';
+import AttendanceSubmit from './pages/AttendenceSubmit';
+import Feedback from './phdfulltimestudent/Feedback';
+import FeedbackList from './phdfulltimestudent/FeedbackList';
+import PropsComponent from './components/PropsComponent';
 
 
 
@@ -51,12 +59,6 @@ function App() {
   return (
     <BrowserRouter>
     <div className="App">
-
-     
-
-     
-      
-    
       {/* <AboutUs/> */}
          <Routes>
              {/* <Route exact path='/homenavbar' element={<Navbar/>}/> */}
@@ -65,6 +67,8 @@ function App() {
              <Route exact path='/service' element={<Services/>}/>
              <Route exact path='/about' element={<AboutUs/>}/>
              <Route exact path='/contact' element={<ContactUs/>}/>
+             <Route exact path="/propscomponent" element={ <PropsComponent/>}/>
+
              <Route exact path="/Home" element={ <Home/>}/>
              {/* halftime PHD Student */}
              <Route exact path="/halftimehome" element={<HalftimeHome/>}/>
@@ -75,6 +79,10 @@ function App() {
              <Route exact path="/sidebarStudent" element={<SidebarStudent/>}/>
              <Route exact path="/leaveapplicationuser" element={<LeaveApplicationuser/>}/>
              <Route exact path="/approveuserleave" element={<ApproveUserLeaveApplication/>}/>
+             <Route exact path="/dashboarduser" element={<DashboardUser/>}/>
+             <Route exact path="/assignmentlistuser" element={<AssignmentListUser/>}/>
+             <Route exact path="/attendence" element={<Attendance/>}/>
+
             
              {/* Phd Fulltime Student */}
              <Route exact path="/homephdstudent" element={ <HomePhdStudent/>}/>
@@ -93,7 +101,8 @@ function App() {
               <Route exact path="/fulltimeassignments" element={<Assignments/>}/>
               <Route exact path="/fulltimeapplyleave" element={<ApplyLeave/>}/>
               <Route exact path="/fulltimeleaveapplication" element={<LeaveApplicationForm/>}/>
-              <Route exact path="/approveleaveapplication" element={<ApproveLeaveApplication/>}/>
+              <Route exact path="/approveleaveapplication" element={<ApproveLeaveApplication/>}/>AssignmentListFull
+              <Route exact path="/assignmentlistf" element={<AssignmentListFull/>}/>
 
               <Route exact path="/fulltimeattendence" element={<Attendence/>}/>
               <Route exact path="/fulltimeperformance" element={<Performance/>}/>
@@ -101,10 +110,8 @@ function App() {
               <Route exact path="/fulltimeresearch" element={<ResearchActivity/>}/>
               <Route exact path="/fulltimesalary" element={<Salary/>}/>
               <Route exact path="/fulltimeproctor" element={<Proctor/>}/>
-             
-
-      
-      
+              <Route exact path="/feedback" element={<Feedback/>}/>
+              <Route exact path="/feedbacklist" element={<FeedbackList/>}/>
 
 
              {/* Login admin,student */}
@@ -114,12 +121,14 @@ function App() {
 
              {/* Admin Home page */}
              <Route exact path="/adminhome" element={<AdminHome/>}/>
+             <Route exact path="/attendencesubmit" element={<AttendanceSubmit/>}/>
             
             
               
         </Routes>
 
         <Footer/>
+       
         
        
     </div>

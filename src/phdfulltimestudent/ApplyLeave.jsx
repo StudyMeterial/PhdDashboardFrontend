@@ -78,9 +78,9 @@ const ApplyLeave = () => {
     }, []);
 
     return (
-        <div className="container mt-5 bg-success" style={{margin:'30px',padding:'100px'}}>
+        <div className="container mt-5 "  style={{margin:'30px',padding:'100px',background: '#d4edda'}}>
            
-            <ul className="list-group bg-info" style={{padding:'30px'}}>
+            <ul className="list-group " style={{padding:'30px'}}>
             <h2>Leave Applications</h2>
                 {applications.map(application => (
                     <li key={application.id} className="list-group-item">

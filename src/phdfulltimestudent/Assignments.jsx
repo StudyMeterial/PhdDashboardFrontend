@@ -53,11 +53,11 @@ const Assignments = () => {
   return (
     <>
     <NavbarFullTime/>
-    <div className="container mt-5">
-      <div className="row justify-content-center">
+    <div className="container mt-5" style={{ margin: '100px auto', maxWidth: '1200px', padding: '20px', background: '#d4edda' }}>
+      <div className="justify-content-center"  style={{ margin: '10px auto', maxWidth: '600px', padding: '20px', background: '#d4edda' }}>
         <div className="col-md-12">
           <div className="card">
-            <div className="card-header bg-primary text-white">
+            <div className="card-header ">
               <h2 className="text-center">Assignment Details</h2>
             </div>
             <div className="card-body">

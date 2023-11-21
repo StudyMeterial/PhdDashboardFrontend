@@ -28,7 +28,7 @@ export default function HomePhdStudent() {
   return (
     <>
     <NavbarAdmin/>
-    <div className="container">
+    <div className="container" >
       <div className="py-4">
         <Link className="btn btn-outline-primary" to={`/addStudent`}>
           Add PhdStudent
